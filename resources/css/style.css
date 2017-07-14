@@ -1,3 +1,6 @@
+/*body {
+  overflow: scroll;    don't know how to do this without having two big scrollbars
+}*/
 /*Header Heading*/
 h1 {
   font-family: Verdana;
@@ -19,8 +22,16 @@ a {
   font-size: 14px;
   font-weight: bold;
 }
-/*Content Titles*/
+/*Main Story Titles*/
 h2 {
+
+}
+/*Image Story Title*/
+h3 {
+
+}
+/*Text Story Title*/
+h4 {
 
 }
 /*Header Container*/
@@ -46,13 +57,43 @@ h2 {
 }
 /*Main Content Container*/
 .container {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: flex;
-  border: 1px solid red;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
 }
 /*Content Columns*/
 .column {
-  a
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  flex-flow: column nowrap;
+  margin: 15px;
 }
 /*Large Column*/
+.large {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  width: 630px;
+  flex: 1 1 630px;
+}
 /*Medium Column*/
+.medium {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  flex: 1 1 300px;
+  width: 300px;
+}
 /*Small Column*/
+.small {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  flex: 1 1 240px;
+  width: 240px;
+}
+/*Column Within Large Column Container*/
+.sub-large-container {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  display: flex;
+}
+/*Column Within Large Column*/
+.sub-large {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  flex: 1 1 300px;
+}
