@@ -6,17 +6,53 @@ h1 {
   padding-left: 15px;
 }
 /*Header Navigation*/
-.nav {
+nav {
   display: inline-block;
-  right: 8px;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+/*Navigation Links*/
+a {
+  padding-left: 20px;
+  color: black;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+/*Content Titles*/
+h2 {
+
 }
 /*Header Container*/
 .header {
+  display: flex;
   position: fixed;
+  justify-content: space-between;
   margin: -9px 0 0 -9px;
   padding: 10px;
   align-items: center;
-  display: flex;
   width: 100%;
   border: 1px solid black;
 }
+/*Header Logo*/
+.headerlogo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+/*Header Offset*/
+.headerspace {
+  height: 82px;
+}
+/*Main Content Container*/
+.container {
+  display: flex;
+  border: 1px solid red;
+}
+/*Content Columns*/
+.column {
+  a
+}
+/*Large Column*/
+/*Medium Column*/
+/*Small Column*/
