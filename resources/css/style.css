@@ -21,7 +21,6 @@ a {
 }
 /*Main Story Title*/
 h2 {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -36,6 +35,7 @@ h3 {
   align-items: center;
   font-family: Georgia;
   font-size: 30px;
+  text-align: center;
   color: white;
 }
 /*Text Story Titles*/
@@ -55,6 +55,39 @@ h5 {
 p {
   font-family: Georgia;
   font-size: 17px;
+}
+/*Footer*/
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  align-items: center;
+  margin: 100px 0 100px;
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 12px;
+}
+/*Footer Title*/
+footer h1 {
+  font-family: Georgia;
+  font-size: 16px;
+  color: white;
+}
+/*Footer Links*/
+footer nav {
+  display: inline-flex;
+  align-items: center;
+}
+footer a {
+  font-weight: normal;
+}
+/*Copyright*/
+footer p {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
 }
 /*General div rule*/
 div {
@@ -85,7 +118,6 @@ div {
 }
 /*Main Content Container*/
 .container {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -93,120 +125,100 @@ div {
 }
 /*Content Columns*/
 .column {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex-flow: column wrap;
 }
 /*Large Column*/
 .large {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   width: 630px;
   flex: 2.625 1 630px;
   margin: 15px;
 }
 /*Medium Column*/
 .medium {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex: 1.25 1 300px;
   width: 300px;
   margin: 15px;
 }
 /*Small Column*/
 .small {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex: 1 1 240px;
   width: 240px;
   margin: 15px;
 }
 /*Column Within Large Column Container*/
 .sub-large-container {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: flex;
 }
 /*Column Within Large Column*/
 .sub-large {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex: 1 1 300px;
 }
 /*Main Story*/
 .story-main-parent {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: relative;
   width: 100%;
   background-image: url("./images/img-story-main.png");        /*img res: 629x300 px*/
   background-size: cover;
 }
 .story-main-child {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: relative;
   padding-bottom: calc(100% * 300 / 629);
 }
 .story-main-child > h2 {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
 /*Story 1*/
 .story-1-parent {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: relative;
   width: 100%;
   background-image: url("./images/img-story-1.png");        /*img res: 299x300 px*/
   background-size: cover;
 }
 .story-1-child {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: relative;
   padding-bottom: calc(100% * 300 / 299);
 }
 .story-1-child > h3 {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
 /*Story 2*/
 .story-2-parent {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: relative;
   width: 100%;
   background-image: url("./images/img-story-2.png");        /*img res: 299x300 px*/
   background-size: cover;
 }
 .story-2-child {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: relative;
   padding-bottom: calc(100% * 300 / 299);
 }
 .story-2-child > h3 {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
 /*Story 3*/
 .story-3-parent {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   display: relative;
   width: 100%;
   background-image: url("./images/img-story-3.png");        /*img res: 299x300 px*/
   background-size: cover;
 }
 .story-3-child {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: relative;
   padding-bottom: calc(100% * 300 / 299);
 }
 .story-3-child > h3 {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
 }
   /*News Bites Cookie Image*/
 .img-news-bite {
-  border: 1px solid red;      /*NOTE REMOVE BORDER*/
   width: 100%;
 }
 /*News Bites List*/
 .news-bite-link {
-    border: 1px solid red;      /*NOTE REMOVE BORDER*/
     list-style: none inside;
     padding-left: 0;
     font-family: Verdana;
@@ -218,4 +230,19 @@ div {
 .news-bite-link li {
   padding: 1em;
   border-bottom: 1px solid black;
+}
+/*Footer Background*/
+.footer-background {
+  background-color: MediumAquamarine;
+}
+/*Footer Contariner*/
+.footer-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+}
+/*Footer Vertical Bar Special Character*/
+.footer-vertical-bar {
+  font-size: 20px;
+  font-weight: 600;
 }
