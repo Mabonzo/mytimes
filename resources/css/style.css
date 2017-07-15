@@ -1,6 +1,3 @@
-/*body {
-  overflow: scroll;    don't know how to do this without having two big scrollbars
-}*/
 /*Header Heading*/
 h1 {
   font-family: Verdana;
@@ -22,17 +19,46 @@ a {
   font-size: 14px;
   font-weight: bold;
 }
-/*Main Story Titles*/
+/*Main Story Title*/
 h2 {
-
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-family: Georgia;
+  font-size: 40px;
+  color: white;
 }
-/*Image Story Title*/
+/*Numbered (with Images) Story Titles*/
 h3 {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia;
+  font-size: 30px;
+  color: white;
 }
-/*Text Story Title*/
+/*Text Story Titles*/
 h4 {
-
+  font-family: Georgia;
+  font-size: 2em;
+}
+/*News Bites Title*/
+h5 {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/*Content*/
+p {
+  font-family: Georgia;
+  font-size: 17px;
+}
+/*General div rule*/
+div {
+  overflow: hidden;
 }
 /*Header Container*/
 .header {
@@ -41,9 +67,11 @@ h4 {
   justify-content: space-between;
   margin: -9px 0 0 -9px;
   padding: 10px;
+  z-index: 50;
   align-items: center;
   width: 100%;
   border: 1px solid black;
+  background-color: white;
 }
 /*Header Logo*/
 .headerlogo {
@@ -66,26 +94,28 @@ h4 {
 /*Content Columns*/
 .column {
   border: 1px solid red;      /*NOTE REMOVE BORDER*/
-  flex-flow: column nowrap;
-  margin: 15px;
+  flex-flow: column wrap;
 }
 /*Large Column*/
 .large {
   border: 1px solid red;      /*NOTE REMOVE BORDER*/
   width: 630px;
-  flex: 1 1 630px;
+  flex: 2.625 1 630px;
+  margin: 15px;
 }
 /*Medium Column*/
 .medium {
   border: 1px solid red;      /*NOTE REMOVE BORDER*/
-  flex: 1 1 300px;
+  flex: 1.25 1 300px;
   width: 300px;
+  margin: 15px;
 }
 /*Small Column*/
 .small {
   border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex: 1 1 240px;
   width: 240px;
+  margin: 15px;
 }
 /*Column Within Large Column Container*/
 .sub-large-container {
@@ -96,4 +126,96 @@ h4 {
 .sub-large {
   border: 1px solid red;      /*NOTE REMOVE BORDER*/
   flex: 1 1 300px;
+}
+/*Main Story*/
+.story-main-parent {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: relative;
+  width: 100%;
+  background-image: url("./images/img-story-main.png");        /*img res: 629x300 px*/
+  background-size: cover;
+}
+.story-main-child {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: relative;
+  padding-bottom: calc(100% * 300 / 629);
+}
+.story-main-child > h2 {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+/*Story 1*/
+.story-1-parent {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  display: relative;
+  width: 100%;
+  background-image: url("./images/img-story-1.png");        /*img res: 299x300 px*/
+  background-size: cover;
+}
+.story-1-child {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: relative;
+  padding-bottom: calc(100% * 300 / 299);
+}
+.story-1-child > h3 {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+/*Story 2*/
+.story-2-parent {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  display: relative;
+  width: 100%;
+  background-image: url("./images/img-story-2.png");        /*img res: 299x300 px*/
+  background-size: cover;
+}
+.story-2-child {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: relative;
+  padding-bottom: calc(100% * 300 / 299);
+}
+.story-2-child > h3 {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+/*Story 3*/
+.story-3-parent {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  display: relative;
+  width: 100%;
+  background-image: url("./images/img-story-3.png");        /*img res: 299x300 px*/
+  background-size: cover;
+}
+.story-3-child {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: relative;
+  padding-bottom: calc(100% * 300 / 299);
+}
+.story-3-child > h3 {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+  /*News Bites Cookie Image*/
+.img-news-bite {
+  border: 1px solid red;      /*NOTE REMOVE BORDER*/
+  width: 100%;
+}
+/*News Bites List*/
+.news-bite-link {
+    border: 1px solid red;      /*NOTE REMOVE BORDER*/
+    list-style: none inside;
+    padding-left: 0;
+    font-family: Verdana;
+    font-size: 12px;
+    background-color: WhiteSmoke;
+    color: DimGray;
+}
+/*News Bites List Items*/
+.news-bite-link li {
+  padding: 1em;
+  border-bottom: 1px solid black;
 }
