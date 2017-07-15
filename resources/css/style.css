@@ -233,6 +233,7 @@ div {
 }
 /*Footer Background*/
 .footer-background {
+  display: block;
   background-color: MediumAquamarine;
 }
 /*Footer Contariner*/
